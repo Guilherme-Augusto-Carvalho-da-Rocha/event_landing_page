@@ -1,6 +1,8 @@
 @use 'hero';
 @use './components/info-bar';
 @use './components/buttons';
+@use 'event';
+
 *{
     padding: 0;
     margin: 0;

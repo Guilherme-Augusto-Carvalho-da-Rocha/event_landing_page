@@ -1,0 +1,46 @@
+.event{
+    padding: 80px 0;
+    background-image: linear-gradient(180deg, #1B6CA7, #442BDB);
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__image{
+        max-width: 360px;
+    }
+    
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 40px;
+        
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        
+        &__description{
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            max-width: 100%;
+            width: 100%;
+            margin-top: 16px;
+        }
+
+        &__details{
+            margin: 0;
+        }
+    }
+}
