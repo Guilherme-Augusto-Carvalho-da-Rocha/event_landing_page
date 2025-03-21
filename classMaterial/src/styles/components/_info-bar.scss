@@ -1,0 +1,35 @@
+.info-bar{
+    padding: 16px 24px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list{
+        display: flex;
+        gap: 40px;
+        &__item{
+            color: #000;
+            list-style: none;
+            font-size: 14px;
+            b{
+                display: block;
+                color: #000;
+                margin-bottom: 8px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width:640px){
+        display: block;
+
+        &__list{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
