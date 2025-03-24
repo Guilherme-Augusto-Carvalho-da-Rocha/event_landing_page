@@ -1,3 +1,5 @@
+@use '../variables';
+
 .info-bar{
     padding: 16px 24px;
     background-color: #FFF;
@@ -9,12 +11,12 @@
         display: flex;
         gap: 40px;
         &__item{
-            color: #000;
+            color: variables.$secondaryTextColor;
             list-style: none;
             font-size: 14px;
             b{
                 display: block;
-                color: #000;
+                color: variables.$secondaryTextColor;
                 margin-bottom: 8px;
                 font-size: 18px;
             }
