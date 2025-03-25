@@ -1,0 +1,46 @@
+@use 'header';
+@use './components/info-bar';
+@use './components/button';
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @media(max-width: 767px){
+        max-width: 90vw;
+    }
+
+    @media (max-width: 1023px){
+        max-width: 80vw;
+    }
+}
+
+.text{
+    @include text();
+
+    &--big{
+        @include text(24px);
+    }
+
+    &--small{
+        @include text(12px);
+    }
+
+    &--subtext{
+        color: #000;
+    }
+}

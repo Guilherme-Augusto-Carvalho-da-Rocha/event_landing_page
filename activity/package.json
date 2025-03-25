@@ -1,0 +1,20 @@
+{
+  "name": "activity",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "activity": "file:"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.2",
+    "parcel": "^2.14.2",
+    "sharp": "^0.33.5"
+  }
+}

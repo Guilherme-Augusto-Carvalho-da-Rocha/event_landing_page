@@ -1,0 +1,31 @@
+.header{
+    background-image: url(../images/birthday-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding-bottom: 2vw;
+
+    & .container{
+        position: relative;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: 0.5;
+    }
+
+    &__birthday-boy{
+        margin: 2vw 0;
+        max-width: 240px;
+        border-radius: 8px;
+    }
+
+    
+}

@@ -1,0 +1,40 @@
+.info-bar{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    padding: 12px;
+    background-color: #FFF;
+    margin-top: 3vw;
+
+    &__infos{
+        display: flex;
+        gap: 5vw;
+        &__item{
+            list-style: none;
+            text-align: left;
+            white-space: nowrap;
+
+            b{
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        flex-direction: column;
+
+        &__infos{
+            flex-direction: column;
+            margin-bottom: 2vh;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        flex-direction: column;
+
+        &__infos{
+            margin-bottom: 2vh;
+        }
+    }
+}
