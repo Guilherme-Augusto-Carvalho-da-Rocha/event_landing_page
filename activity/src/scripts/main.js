@@ -31,7 +31,7 @@ function ChangeDate(){
         //console.log(timeUntilEventString);
         if(timeUntilEvent <= 0){
             clearInterval(actualInterval);
-            HTMLDateSpan.innerHTML = "já passou!";
+            HTMLDateSpan.innerHTML = "já começou! (ou até acabou a depender da hora)";
         }
 
     }, 1000);
