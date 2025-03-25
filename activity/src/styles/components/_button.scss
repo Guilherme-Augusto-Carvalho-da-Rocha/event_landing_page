@@ -1,8 +1,10 @@
+@use '../variables';
+
 .button{
     padding: 8px;
-    background-color: #4F2AC3;
+    background-color: variables.$buttonColor;
     text-decoration: none;
-    color: #FFF;
+    color: variables.$mainColor;
     border-radius: 8px;
     
     @media (max-width: 767px){

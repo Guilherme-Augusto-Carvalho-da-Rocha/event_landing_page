@@ -1,10 +1,11 @@
 @use 'header';
 @use './components/info-bar';
 @use './components/button';
+@use 'variables';
 
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
-    color: #FFF;
+    color: variables.$mainColor;
 }
 
 * {
@@ -41,6 +42,6 @@
     }
 
     &--subtext{
-        color: #000;
+        color: variables.$secondaryColor;
     }
 }

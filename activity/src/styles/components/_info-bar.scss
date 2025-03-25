@@ -1,10 +1,12 @@
+@use '../variables';
+
 .info-bar{
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
 
     padding: 12px;
-    background-color: #FFF;
+    background-color: variables.$mainColor;
     margin-top: 3vw;
 
     &__infos{
