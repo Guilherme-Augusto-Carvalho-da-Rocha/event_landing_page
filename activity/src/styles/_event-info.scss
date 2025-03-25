@@ -1,0 +1,54 @@
+@use 'variables';
+
+.event-info{
+    padding: 5vw;
+
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    &__desc{
+        &__image{
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    &--image-on-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    &--piscina{
+        background-image: linear-gradient(variables.$firstGradientColor, variables.$secondGradientColor);
+    }
+
+    &--churrasco{
+        background-image: linear-gradient(variables.$secondGradientColor, variables.$thirdGradienteColor);
+    }
+
+    &--vegetarianos{
+        background-image: linear-gradient(variables.$thirdGradienteColor, variables.$fourthGradienteColor);
+    }
+
+    &--presentes{
+        background-image: linear-gradient(variables.$fourthGradienteColor, variables.$firstGradientColor);
+    }
+
+    @media (max-width: 767px){
+        .container{
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 1023px){
+        &__desc{
+            &__image{
+                max-width: 35%;
+            }
+        }
+    }
+}

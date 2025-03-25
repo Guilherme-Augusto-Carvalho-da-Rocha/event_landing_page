@@ -2,6 +2,8 @@
 @use './components/info-bar';
 @use './components/button';
 @use 'variables';
+@use 'event-info';
+
 
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
